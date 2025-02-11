@@ -1,4 +1,7 @@
-b=int(input())
-a=int(input())
-for i in range(a,b):
-  print(i**2)
+def squares(a, b):
+    for i in range(a, b+1):
+        yield i*i 
+
+
+for i in squares(1, 5):
+    print(i)

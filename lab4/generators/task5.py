@@ -1,7 +1,6 @@
-n=int(input())
+def down(n):
+    for i in range(n, -1, -1):
+        yield i
 
-x=[]
-for i  in range(0,n+1):
-    x.append(i)
-x.reverse()
-print(x)
+for i in down(5):
+    print(i)
