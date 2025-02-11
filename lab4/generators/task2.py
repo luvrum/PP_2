@@ -11,4 +11,4 @@ values = []
 for i in EvenGenerator(n):
     values.append(str(i))
 
-print (",".join(values))
+print(values)
