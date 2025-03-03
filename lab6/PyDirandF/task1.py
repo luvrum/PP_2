@@ -1,6 +1,6 @@
 import os
+path = r"C:\Users\H.GULNAFIS\OneDrive\Рабочий стол\пп2\lab6"
 
-with os.scandir('.') as enteries:
-    print("Files and Directories:")
-    for entry in enteries:
-        print(entry.name)
+dirs = os.listdir(path)
+
+print(f'folders and files in path - "{path}":\n', dirs)

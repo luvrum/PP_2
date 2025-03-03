@@ -1,7 +1,10 @@
-import os
-path="C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab6/PyDirandF/task5.py"
+import os 
+
+path = r'C:\Users\H.GULNAFIS\OneDrive\Рабочий стол\пп2\lab6'
+
 if os.path.exists(path):
-    print(os.path.basename(path))
-    print(os.path.dirname(path))
+    print('Path exists')
+    print('Filename:', os.path.basename(path))
+    print('Directory:', os.path.dirname(path))
 else:
-    print("path doesn't exists")
+    print('This path doesn\'t exist')

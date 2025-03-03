@@ -1,4 +1,6 @@
-mylist=[1,2,3,4,5,6,7,8,9,10]
-
-openfile=open("myfile.txt","w")
-openfile.write(str((mylist)))
+with open('task5.txt', 'w') as f:
+    lst = [1, 'is', 'mine', [1, 1, 1], (1, 7), {1:5}, {1, 4, 5}]
+    f.write(' '.join(map(str, lst)))
+    
+    f.write('\n')
+    f.writelines(map(str, lst))
