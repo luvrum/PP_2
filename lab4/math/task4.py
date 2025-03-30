@@ -1,2 +1,3 @@
-a, b = float(input('Length of base: ')), float(input('Height of parallelogram: '))
-print('Expected Output:', a*b)
+a = float(input())
+b = float(input())
+print(float(a*b))
