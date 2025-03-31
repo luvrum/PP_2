@@ -29,7 +29,7 @@ font = pygame.font.SysFont("Verdana", 60)
 font_small = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("Game Over", True, BLACK)
 
-background = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/AnimatedStreet.png")
+background = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/AnimatedStreet.png")
 
 # Create a white screen
 DISPLAYSURF = pygame.display.set_mode((400, 600))
@@ -43,7 +43,7 @@ class Coin(pygame.sprite.Sprite):
     '''
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/coin.png")
+        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/coin.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
@@ -68,7 +68,7 @@ class Coin_big(pygame.sprite.Sprite):
     '''
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/coin2.png")
+        self.image = pygame.image.load("C:Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/coin2.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
@@ -90,7 +90,7 @@ class Coin_big(pygame.sprite.Sprite):
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/Enemy.png")
+        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/Enemy.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
@@ -106,7 +106,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/Player.png")
+        self.image = pygame.image.load("C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/Player.png")
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
 
@@ -177,7 +177,7 @@ while True:
 
     # To be run if collision occurs between Player and Enemy
     if pygame.sprite.spritecollideany(P1, enemies):
-        pygame.mixer.Sound('C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/racer/crash.wav').play()
+        pygame.mixer.Sound('C:/Users/H.GULNAFIS/OneDrive/Рабочий стол/пп2/lab9/crash.wav').play()
         time.sleep(0.5)
 
         DISPLAYSURF.fill(RED)
