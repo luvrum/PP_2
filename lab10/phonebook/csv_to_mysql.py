@@ -15,7 +15,7 @@ df = pd.DataFrame(data)
 cursor = connection.cursor()
 
 for row in df.itertuples():
-    print(row.phone_number)
+    print(row.phone_number," ", row.name)
     cursor.execute(
         """
         INSERT INTO phone_book (phone_number, name, surname)
